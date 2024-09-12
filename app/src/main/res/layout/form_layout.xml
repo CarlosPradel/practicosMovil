@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para escribir o editar la nota -->
+    <EditText
+        android:id="@+id/txtNoteContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribir nota"
+        android:inputType="textMultiLine"
+        android:minHeight="100dp"
+        android:maxLines="5"
+        android:gravity="top|start"
+        android:padding="8dp"
+        android:background="@android:drawable/edit_text" />
+
+    <!-- Texto de encabezado para la selección de color -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar color:"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Selector de color para la nota -->
+    <GridLayout
+        android:id="@+id/colorGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:layout_marginTop="8dp">
+
+        <!-- Botones de selección de color (10 botones en total) -->
+        <Button
+            android:id="@+id/colorButton1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFEBEE" />
+
+        <Button
+            android:id="@+id/colorButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFCDD2" />
+
+        <Button
+            android:id="@+id/colorButton3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#F8BBD0" />
+
+        <Button
+            android:id="@+id/colorButton4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#D1C4E9" />
+
+        <Button
+            android:id="@+id/colorButton5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#BBDEFB" />
+
+        <Button
+            android:id="@+id/colorButton6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#C8E6C9" />
+
+        <Button
+            android:id="@+id/colorButton7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFECB3" />
+
+        <Button
+            android:id="@+id/colorButton8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFE0B2" />
+
+        <Button
+            android:id="@+id/colorButton9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFCCBC" />
+
+        <Button
+            android:id="@+id/colorButton10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#D7CCC8" />
+
+    </GridLayout>
+
+</LinearLayout>
